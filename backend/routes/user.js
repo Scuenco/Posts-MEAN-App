@@ -20,7 +20,9 @@ router.post('/signup', (req, res, next) => {
         })
         .catch(err => {
           res.status(500).json({
-            error: err
+            //error: err <--standard error message
+            // display our own error messages.
+            message: "Invalid authentication credentials!"
           });
         });
     });

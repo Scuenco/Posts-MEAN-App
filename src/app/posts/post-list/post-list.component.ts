@@ -67,6 +67,8 @@ onDelete(postid: string) {
   this.postService.deletePost(postid).subscribe(() => {
     // to re-fetch new posts
     this.postService.getPosts(this.postsPerPage, this.currentPage);
+  }, () => {
+    this.isLoading = false;
   });
 }
 }
