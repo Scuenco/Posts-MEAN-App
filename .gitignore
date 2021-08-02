@@ -40,8 +40,11 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-backend/images
 
 # System Files
 .DS_Store
 Thumbs.db
+
+# my added files
+backend/images
+nodemon.json

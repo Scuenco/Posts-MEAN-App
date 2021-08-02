@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { PostsService } from '../post.service';
+import { PostsService } from '../posts.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Post } from '../post.model';
@@ -110,7 +110,7 @@ ngOnInit() {
     // form.resetForm();
     this.form.reset();
   }
-  
+
   ngOnDestroy() {
     this.authStatusSub.unsubscribe();
   }
